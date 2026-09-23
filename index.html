@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent shopping guide featuring curated technology, home, and everyday finds.">
+  <title>Temu & Moxie's eXtreme Tech Gears</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#products">Skip to featured finds</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Temu and Moxie's eXtreme Tech Gears home">
+      <span class="brand-mark" aria-hidden="true">⚡</span>
+      <span><strong>Temu & Moxie’s</strong><small>eXtreme Tech Gears</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#products">Shop Finds</a><a href="#how">How It Works</a><a href="#about">About</a>
+    </nav>
+    <button class="theme-button" type="button" aria-label="Switch color theme">☾</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CURATED • PRACTICAL • FUN</p>
+        <h1>Big finds.<br><span>eXtreme value.</span></h1>
+        <p class="hero-text">A bold, independent shopping guide for useful tech, clever home upgrades, and surprising everyday deals.</p>
+        <div class="hero-actions"><a class="button primary" href="#products">Explore the finds</a><a class="button secondary" href="#about">Meet Moxie</a></div>
+        <p class="fine-print">Independent guide. Prices and availability can change. Verify details with the retailer before buying.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative display of shopping categories">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="feature-card fc-main"><span>⚡</span><b>Smart finds</b><small>without the clutter</small></div>
+        <div class="feature-card fc-a"><span>🎧</span><b>Tech</b></div>
+        <div class="feature-card fc-b"><span>🏠</span><b>Home</b></div>
+        <div class="feature-card fc-c"><span>🛒</span><b>Deals</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Site highlights">
+      <div><b>Hand-picked</b><span>Useful finds, not filler</span></div>
+      <div><b>Easy to browse</b><span>Clear categories and filters</span></div>
+      <div><b>Buyer-first</b><span>Quick tips before you click</span></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LATEST PICKS</p><h2>Featured finds</h2></div>
+        <label class="search"><span class="sr-only">Search products</span><input id="search" type="search" placeholder="Search the collection…"></label>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all" type="button">All finds</button>
+        <button class="filter" data-filter="Tech" type="button">Tech</button>
+        <button class="filter" data-filter="Home" type="button">Home</button>
+        <button class="filter" data-filter="Everyday" type="button">Everyday</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No matching finds yet. Try another search.</p>
+    </section>
+
+    <section class="how-section" id="how">
+      <div><p class="eyebrow">SHOP SMARTER</p><h2>How it works</h2><p>Each card gives shoppers the essentials first. Add your verified product photo, current price, short buyer tip, and official destination link.</p></div>
+      <ol><li><span>01</span><div><b>Discover</b><p>Browse by category or search for a specific item.</p></div></li><li><span>02</span><div><b>Compare</b><p>Check the quick take and important product details.</p></div></li><li><span>03</span><div><b>Verify & shop</b><p>Confirm price, shipping, and availability on the retailer’s page.</p></div></li></ol>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-badge">M<span>⚡</span>X</div>
+      <div><p class="eyebrow">THE MOXIE METHOD</p><h2>Useful beats overwhelming.</h2><p>This independent guide is built to make online shopping more enjoyable. Every listing should earn its place with a clear use, practical context, and an honest reason to consider it.</p><p class="disclosure"><b>Affiliate disclosure:</b> Some future links may be affiliate links, which can earn this site a commission at no extra cost to the shopper. Retailer names and trademarks belong to their respective owners. This site is not the official website of any featured retailer.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">⚡</span><span><strong>Temu & Moxie’s</strong><small>eXtreme Tech Gears</small></span></a><p>Independent shopping inspiration, built with Moxie.</p><p>© <span id="year"></span> • <a href="#about">Disclosure</a> • <a href="mailto:hello@example.com">Contact</a></p></footer>
+</body>
+</html>
